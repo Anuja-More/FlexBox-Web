@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+height: 100vh;
+}
+
+.header-class{
+height: 30%;
+background-color: rgb(88, 235, 88);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* for the header tag */
+
+.no-margin{
+margin: 0;
+}
+/* margin is assinged to the h1 
+tag to override it margin was made 0 */
+.center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav{
+  height: 10%;
+background-color: rgb(19, 18, 18);
+display: flex;
+flex-direction: row;
+justify-content: left;
+
+}
+/* for giving links put it in nav semyantic */
+a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+/* text colour changed to blue to white
+and text underline of link also removed */
+a:hover{
+color: black;
+background-color: grey;
+
+}
+/* white to black after hover */
+
+nav > div{
+padding: 10px;
+}
+/* giving content space in the div from outer content */
+
+/* nav>div selecting all child div */
+
+/* nav > div:hover{
+background-color: grey;
+}
+color of bacground got changed  */
+
+aside{
+  padding: 30px 10px 30px 10px;
+ height: 100%;
+  width:20%;
+  background-color: rgb(187, 216, 245);
+  overflow: auto;
+/* when to many images are there it gets overflowed to avoid 
+that it willgive scrollbar to move things  */
+}
+/* to make to look aside this tag is used */
+section{
+  padding: 30px 10px 30px 10px;
+  height: 100%;
+  width: 80%;
+}
+/* aside and section are in same line same  */
+.content-row{
+height: 200%;
+display: flex;
+flex-direction: row;
+}
+/* content row is parent of the aside and section so by giving 
+it size of 200 aside and section will be always give same size 
+after giving it 100% to each for good maintainance so the if you 
+want to change the size dont need to change it for the two if one 
+is edited other gets adjested with it */
+.image-container{
+height: 20%;
+width: 100%;
+flex-direction: column;
+
+}
+.image{
+  background-color: palevioletred;
+  height: 40%;
+  width: 100%;
+}
+
+.image-small{
+  background-color: palevioletred;
+  margin: 10px 0px 10px 0px;
+  height: 5%;
+  width: 100%;
+}
+
+footer{
+height: 20%;
+background-color:  rgb(58, 151, 245);
+} 
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+  .nav a {
+    float: none;
+    width: 100%;
+}
